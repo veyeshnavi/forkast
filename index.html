@@ -319,14 +319,18 @@
         function drawIngredientsScreen() {
             noStroke();
 
-            fill(0);
+            
             textAlign(CENTER, CENTER);
             textSize(36);
             textStyle(NORMAL);
             text('Choose any 2 Ingredients', width / 2, 80);
 
+            fill(0);
             textSize(18);
             text(`LONG PRESS to select`, width / 2, 110);
+
+            fill(0);
+            textSize(18);
             text(`Selected: ${userChoices.ingredients.length}/2`, width / 2, 135);
 
             const availableIngredients = ingredientsByLocation[userChoices.location];
